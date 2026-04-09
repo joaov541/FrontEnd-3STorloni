@@ -54,3 +54,21 @@
     background-color: rgb(75, 137, 52);
     transition: background-color 0.2s;
 }
+
+/*card perfil do usuário*/
+
+.card-perfil{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 138, 138);
+}
+
+.card-perfil__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
