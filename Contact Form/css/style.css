@@ -11,8 +11,6 @@
 
 body{
     width: 100vw;
-    height: auto;
-    overflow: scroll;
     min-height: 100vh;
      background-image: linear-gradient( to right bottom, #18A2C9,#18A2C9, #72C3DB);
 }
@@ -64,21 +62,31 @@ body{
     margin-bottom: 15px;
 }
 
+.form-contact__linha2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 .form-contact__col-a{
     width: 10%;
     height: 100%;
     /* border: 1px solid black; */
-    display: flex;
-    align-items: center;
 }
 
 .form-contact__col-b{
     width: 90%;
     height: 100%;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    
     
 }
+
+
+
 
 .form-contact__label{
     color: white;
@@ -108,12 +116,55 @@ body{
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
+.form-contact__input--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bt12{
+    width: 35%;
+    height: 50px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.bt12:hover{
+    background-color: #00aada;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
 
 /*deixar um espaço para trabalhar entre eles*/
 .form-contact__input--metade{
     width: 48%;
+    
 }
 
-.form-contact__input--metade{
+.form-contact__input--inteira{
     width: 100%;
+}
+
+.form-contact__input--terco{
+    width: 31%; 
+    
+}
+
+
+.form-contact__input--quarto{
+    width: 25%;
+}
+
+.form-contact__input--text{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
