@@ -168,3 +168,78 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 991px){
+        .form-contact{
+        border-radius: 12px;
+        padding: 30px;
+    }
+
+      .form-contact__col-a {
+        width: 15%;
+        height: 30px;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 767px){
+
+    .form-header__image-perfil{
+        width: 80px;
+    }
+
+    .form-header__title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-header__text{
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .form-contact{
+        padding: 30px;
+    }
+
+    
+    .form-contact__linha{
+        flex-direction: column;
+    }
+
+    .form-contact__col-a{
+        width: 100%;
+    }
+
+    .form-contact__col-b{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-contact__input{
+        width: 100%;
+    }
+
+    .form-contact__input--btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bt12{
+        width: 100%;
+    }
+
+    .form-contact__input--text{
+        height: 150px;
+    }
+
+    .form-contact__col-a{
+        display: none;
+    }
+}
