@@ -67,7 +67,13 @@
                     <label class="form-contact__label" for="endereco">Endereço</label>
                 </div>
                 <div class="form-contact__col-b">
-                    <input class="form-contact__input form-contact__input--quarto" type="text" placeholder="cep: 9999-999" id="cep" name="end">
+
+                    <input class="form-contact__input form-contact__input--quarto" 
+                    type="text" placeholder="cep: 9999-999" id="cep" 
+                    name="end" 
+                    maxlength="8" 
+                    onblur="buscarEndereco(this.value)">
+                    
                     <input class="form-contact__input form-contact__input--metade" type="text" placeholder="Rua Lá de Casa" id="rua" name="end">
                     <input class="form-contact__input form-contact__input--quarto" type="text" placeholder="ex: 555" id="numeroCasa" name="end">
                 </div>

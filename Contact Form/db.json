@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "João",
+      "Sobrenome": "Nascimento"
+    },
+    {
+      "id": "2",
+      "nome": "Isis",
+      "Sobrenome": "Souza"
+    },
+    {
+      "nome": "Hugo",
+      "Sobrenome": "Ximenes",
+      "id": "21xknboY6Uo"
+    },
+    {
+      "nome": "Lorenzo",
+      "Sobrenome": "Mangile",
+      "id": "JgIi_aWQS6s"
+    },
+    {
+      "nome": "ssw",
+      "sobrenome": "xsxs",
+      "id": "C3WHIi8Wh6c"
+    },
+    {
+      "nome": "Gustavo",
+      "sobrenome": "Augusto",
+      "id": "aEX9f_-MoOQ"
+    },
+    {
+      "nome": "Matheus",
+      "sobrenome": "Felix",
+      "id": "UFWKKKGGWnw"
+    },
+    {
+      "nome": "João",
+      "sobrenome": "Nascimento",
+      "email": "joao.v.santos371@aluno.senai.br",
+      "telefone": "+551194774-8822",
+      "cep": "09941640",
+      "rua": "Rua Annita",
+      "numero": "225",
+      "complemento": "Apto 803 b 1",
+      "bairro": "Canhema",
+      "cidade": "Diadema",
+      "estado": "São Paulo",
+      "anotações": "Amo a Isis.",
+      "id": "Xt6Qc-KZFuk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

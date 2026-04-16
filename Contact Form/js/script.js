@@ -1,3 +1,62 @@
+// Esta função recebe os dados do formulário de um objeto JavaScript e em seguida chama a API para cadastrar
+async function cadastrarContato(objetoContato){
+    console.log(objetoContato);
+
+    //chamar a api com o fetch
+  const resposta = await fetch("http://localhost:3000/contatos", {
+        method : "POST",
+        body: JSON.stringify(objetoContato),//converte o objeto javascript em json 
+        headers: {//Informa para a API que o body está sendo enviado no formato json
+            "Const-Type": "application/json; charset=UTF-8"
+        }
+    });
+}
+
+
+
+
+
+async function buscarEndereco(cep){
+
+    // quando o cep não vier preenchido
+    if(cep.trim().length < 8){
+        alert("O CEP deve ter 8 números");
+        return false;
+    }
+
+    //buscar o CEP lá no ViaCEP
+    try {
+
+        aguardandoCampos();
+        //get
+        let retorno = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        let dados = await retorno.json();
+        // console.log(dados);
+        // console.log(dados.logradouro);
+        // console.log(dados.bairro);
+        // console.log(dados.localidade);
+        // console.log(dados.estado);
+        document.getElementById("rua").value = dados.logradouro;
+        document.getElementById("Bairro").value = dados.bairro;
+        document.getElementById("Cidade").value = dados.localidade;
+        document.getElementById("estado").value = dados.estado;
+        
+    }
+    catch(error){
+        console.log(error);
+    }
+
+    }
+function aguardandoCampos(){
+    document.getElementById("rua").value = "aguarde...";
+    document.getElementById("Bairro").value = "aguarde...";
+    document.getElementById("Cidade").value = "aguarde...";
+    document.getElementById("estado").value = "aguarde...";
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function validarFormulario() 
 {
     let quantidadesErros = 0;
@@ -114,15 +173,36 @@ function validarFormulario()
     } else {
         ReiniciaBordas("anotações");
     }
-//////////////////////////////////////////////////////////////
-    if (quantidadesErros > 0)
+// //////////////////////////////////////////////////////////////
+   
+// hora de cadastrar
+if (quantidadesErros > 0)
     {
         alert("Existem " + quantidadesErros + " erros no formulário!");
+        quantidadesErros = 0; //reinicia a contagem
         return false;
     }
     else
     {        
-        alert("Formulário enviado com sucesso!");
+        alert("Formulário enviado com sucesso")
+        //gera um objeto com os dados do formulário
+        let objetoContato = {
+            nome: nome,
+            sobrenome: sobrenome,
+            email: email,
+            telefone: `${pais}${ddd}${telefone}`,
+            cep: cep,
+            rua: rua,
+            numero: numero,
+            complemento: complemento,
+            bairro: bairro,
+            cidade: cidade,
+            estado: estado,
+            anotações: anotações
+            
+        }
+        let cadastrado = cadastrarContato(objetoContato);
+       
         reiniciaTodasAsBordas();
         return true;
     }
