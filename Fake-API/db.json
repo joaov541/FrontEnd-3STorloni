@@ -99,5 +99,21 @@
       "id": "Sl0-GsELH98"
     }
   ],
+  "calculadora": [
+    {
+      "numero1": 5,
+      "numero2": 5,
+      "op": "multiplicacao",
+      "result": "25.00",
+      "id": "82CVD5_uvBM"
+    },
+    {
+      "numero1": 3,
+      "numero2": 3,
+      "op": "soma",
+      "result": "6.00",
+      "id": "QbKYuMUy_Dk"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

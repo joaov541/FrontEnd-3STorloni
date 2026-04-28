@@ -75,9 +75,8 @@ async function cadstrarNaAPI(objCadastro) {
             }
         });
 
-        const dados = await retorno.json(); 
-        return dados; 
-
+         return await retorno.json();
+         
     } catch (error) {
         console.log("Erro ao cadastrar na API: " + error);
         return await{
