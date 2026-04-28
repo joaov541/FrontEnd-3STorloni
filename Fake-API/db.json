@@ -1,0 +1,103 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "João Vitor",
+      "idade": 17,
+      "email": "joaov@gmail.com"
+    },
+    {
+      "id": "2",
+      "nome": "Isis Souza",
+      "idade": 16,
+      "email": "isisSouza@gmail.com"
+    },
+    {
+      "id": "DIWdwLGjwzs",
+      "nome": "Hugo Ximenes",
+      "idade": 18,
+      "email": "Hugozqk@gmail.com"
+    }
+  ],
+  "Posts": [
+    {
+      "texto": "Bola de basquete personalizada do Lebrom James",
+      "image": "https://m.media-amazon.com/images/I/811mHo2NsQL._AC_UF1000,1000_QL80_.jpg",
+      "qtdCurtidas": 260,
+      "id": "SA6Y3Mxtv4U"
+    },
+    {
+      "texto": "Michael B. Jordan atuando em Creed",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/fe3d159e7816b4f31c5da46a32e0c54b7112570a3e6f2d3b176202bdbeffcd02.jpg",
+      "qtdCurtidas": 743,
+      "id": "-aRANNll-0A"
+    },
+    {
+      "texto": "Gervonta Davis nocauteando Hector Luis",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/8ba779187232c89af508177293ffcf189ce49a5ca9a500f75231bef18f0a8b04._SX1080_FMjpg_.jpg",
+      "qtdCurtidas": 3458712,
+      "id": "j_L-cRhqifA"
+    }
+  ],
+  "Frutas": [],
+  "jogos": [],
+  "imc": [
+    {
+      "nome": "João",
+      "altura": 1.71,
+      "peso": 62,
+      "imc": 21.20310522895934,
+      "situacao": "Saudável",
+      "id": "W0MBiAIm0Dg"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "7Sw905BZU9M"
+    },
+    {
+      "nome": "Isis",
+      "altura": 1.62,
+      "peso": 46,
+      "imc": 17.527815881725342,
+      "situacao": "Magreza leve",
+      "id": "ADa6tYYAMM8"
+    },
+    {
+      "nome": "Marcos",
+      "altura": 1.64,
+      "peso": 62,
+      "imc": 23.051754907792983,
+      "situacao": "Saudável",
+      "id": "EM6G_UNGmK8"
+    },
+    {
+      "nome": "Amilton",
+      "altura": 1.5,
+      "peso": 118,
+      "imc": 52.44444444444444,
+      "situacao": "Obesidade Grau III (considerada mórbida)",
+      "id": "dTj9VrW2WBo"
+    },
+    {
+      "nome": "Bene",
+      "altura": 1.6,
+      "peso": 40,
+      "imc": 15.624999999999996,
+      "situacao": "Magreza grave",
+      "id": "C5zbo39ZxbM"
+    },
+    {
+      "nome": "jj",
+      "altura": 3,
+      "peso": 800,
+      "imc": 88.88888888888889,
+      "situacao": "Obesidade Grau III (considerada mórbida)",
+      "id": "Sl0-GsELH98"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
