@@ -113,6 +113,27 @@
       "op": "soma",
       "result": "6.00",
       "id": "QbKYuMUy_Dk"
+    },
+    {
+      "numero1": 4,
+      "numero2": 3,
+      "op": "soma",
+      "result": "7.00",
+      "id": "FkmWXW4Ts3s"
+    },
+    {
+      "numero1": 4,
+      "numero2": 3,
+      "op": "soma",
+      "result": "7.00",
+      "id": "4wvrXHozI-Q"
+    },
+    {
+      "numero1": 7,
+      "numero2": 2,
+      "op": "multiplicacao",
+      "result": "14.00",
+      "id": "nIHj0_7HH00"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

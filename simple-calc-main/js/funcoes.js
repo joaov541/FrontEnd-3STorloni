@@ -101,7 +101,6 @@ async function carregarCadastros() {
 
 //saída
 // console.log(`Resultado da operação: ${resultado}`);
-document.getElementById('resultado').innerHTML = resultado;
 
 
 
