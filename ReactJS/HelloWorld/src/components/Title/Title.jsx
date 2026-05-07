@@ -1,6 +1,16 @@
-function Title({texto}) {
+//destruturing
+function Title({texto, nome, sobrenome}) {
     return (
-         <h1>{texto}</h1>
+         <h1>{texto}
+         <br />
+         {nome}
+         <br />
+         {sobrenome}
+         
+         </h1>
+        
+
+         
     );
 }
 

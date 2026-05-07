@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <div>
-     <Title texto ="Bem Vindo, sou Título"/>
+     <Title nome="Isis" sobrenome="Souza" texto ="Bem Vindo, sou Título"/>
      <Title texto ="Eu sou outro Título"/>
      <Paragrafo paragrafo ="Este é o parágrafo do site"/>
     </div>

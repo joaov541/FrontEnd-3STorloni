@@ -1,0 +1,15 @@
+/* .container {
+    background-color: rgb(185, 185, 185);
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.butao {
+    height: 80px;
+    width: 200px;
+    
+}
