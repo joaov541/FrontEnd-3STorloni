@@ -1,7 +1,12 @@
 import { useState } from "react"
 import Contador from "./components/contador/contador"
+import CadFruta from "./components/cadFruta/cadfruta"
+import CicloDeVida from "./components/ciclodevida/ciclodevida"
 function App() {
   //objeto privado
+
+    const [mostrar, setMostrar] = useState(true)
+
 
   const [nome, setNome] = useState("Google")
 
@@ -15,7 +20,7 @@ function App() {
 
   return (
     <>  
-    <h1>{nome} Page</h1>
+    {/* <h1>{nome} Page</h1>
     <button onClick={trocarTexto}>Mudar Texto</button>
     <button onClick={() => {
       return setNome("Yahoo")
@@ -25,9 +30,17 @@ function App() {
     {/* evento - evento disparado: change */ }
     {/* target - quem disparou o evento change*/ }
     {/* value - valor do input que disparou o evento change*/ }
-    <input type="text" onBlur={fuiAbandonado} onChange={(evento) => setNome (evento.target.value)} />
+    {/* <input type="text" onBlur={fuiAbandonado} onChange={(evento) => setNome (evento.target.value)} /> */} 
 
-    <Contador/>
+    {/* <Contador/>
+    <br /><br />
+    <p>Lorem ipsum <strong>{nome}</strong> dolor sit amet</p> */}
+    {/* <CadFruta/> */}
+
+      <button onClick={() => {
+        setMostrar(!mostrar)
+      }}>Mostrar / Ocultar</button>
+    {mostrar && <CicloDeVida/>}
     </>
   )
 }
