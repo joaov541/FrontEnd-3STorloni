@@ -1,4 +1,37 @@
 {
-  "produtos": [],
+  "produtos": [
+    {
+      "titulo": "Jordan 4 Black Catws",
+      "categoria": "Tênis",
+      "preco": 1800,
+      "estoque": 457,
+      "imagem": "shopping (2)-jordan4.webp",
+      "id": "CGk081GuC2s"
+    },
+    {
+      "titulo": "Bola de Basquete",
+      "categoria": "Esporte",
+      "preco": 234,
+      "estoque": 4312,
+      "imagem": "shopping.webp",
+      "id": "hXXVfGpBaoE"
+    },
+    {
+      "titulo": "Mouse",
+      "categoria": "Games",
+      "preco": 55,
+      "estoque": 6468,
+      "imagem": "shopping (1).webp",
+      "id": "zoHewQwOnDA"
+    },
+    {
+      "titulo": "Mochila Nike",
+      "categoria": "Esporte",
+      "preco": 243,
+      "estoque": 4456,
+      "imagem": "mochilanike.webp",
+      "id": "uGk2dWaZrnM"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
