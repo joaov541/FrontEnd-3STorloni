@@ -1,12 +1,12 @@
 import './App.css'
 import CadastroFilme from './pages/cadastroFilme/CadastroFilme'
-import CadastroGenero from './pages/cadastroGenero/Cadastro'
+import CadastroGenero from './pages/cadastroGenero/CadastroGenero'
 import Login from './pages/login/login'
-import Rotas from './routes'
+import {Rotas} from './routes'
+
 
 
 function App() {
-  
 
   return (
     <>
