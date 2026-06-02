@@ -6,6 +6,11 @@
 
 }
 
+.campo_cad_imagem {
+    display: flex;
+    flex-direction: column;
+}
+
 .form_cadastro{
     display: flex;
     flex-direction: column;
@@ -24,6 +29,7 @@
     border-color: #73061B;
     margin-top: 5px;
 }
+
 
 .campos_cadastro{
     display: flex;

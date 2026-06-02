@@ -1,4 +1,4 @@
-import "./Alerta.css"
+import "./alerta.css"
 import Swal from "sweetalert2"
 
 export const Alerta = ({
@@ -16,9 +16,9 @@ export const Alerta = ({
         title,
         text,
         icon,
-        showCancelButton: showCancelButton != null ? showCancelButton : undefined,
-        confirmButtonText: confirmButtonText != null ? confirmButtonText : undefined,
-        cancelButtonText: cancelButtonText != null ? cancelButtonText : undefined,
+        showCancelButton: showCancelButton,
+        confirmButtonText: confirmButtonText,
+        cancelButtonText: cancelButtonText,
         confirmButtonColor,
         cancelButtonColor,
      })
