@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react"
 import { UsuarioContext } from "./UsuarioContext"
 
-// disponibiliza o state do usuário de forma global para
-// todos os seus componentes filhos (children)
 export const UsuarioProvider = ({ children }) => {
     const [usuario, setUsuario] = useState(null)
+    
 
-    // ciclo de vida
-    useEffect(() =>{
-        //ao montar o componente pega os dados do usuário do localStorage
-        const usuarioStorage = JSON.parse(localStorage.getItem("usuario"))
-        setUsuario(usuarioStorage)
-    },[])
+    useEffect(() => {
+        const dadosStorage = JSON.parse(localStorage.getItem("usuario"))
+
+        if (dadosStorage) {
+            setUsuario(dadosStorage.usuario)
+            setEmail(dadosStorage.email)
+        }
+    }, [])
 
     return (
         <UsuarioContext.Provider
